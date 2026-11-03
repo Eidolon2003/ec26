@@ -1,0 +1,11 @@
+project Proj is
+	for Main use ("main.adb");
+
+	for Object_Dir use "obj";
+	for Exec_Dir use "bin";
+
+   package Compiler is
+      for Default_Switches ("Ada") use
+        ("-gnat2022", "-gnata");
+   end Compiler;
+end Proj;
